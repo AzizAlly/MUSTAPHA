@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+          <nav>
+            <img src="logo.png" class="logo">
+            <ul id="sidemenu">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#services">services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+          </nav>
+    <div class="header-text">
+        <p>Freelancer</p>
+        <h1>Hi,I'm <span>Mustapha</span><br>from Tanzania</h1>
+    </div>
+</div>
+</div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <image src="mustaffa.jpg"></image>
+                </div>
+                <div class="about-col-2">
+                    <h1>About me</h1>
+                    <p>Welcome to my portfolio website, I'm Experienced video editor and content creator with expertise on Adobe Premire Pro, Final cut Pro, and capCut. Skilled on Storytelling, color grading, and Motion Graphics. Passionate about creating engaging content for social media and digital platforms, delivering high-quality videos for clients and audiences alike. I bring unique and innovative solutions to the table.</p>
+                    <div class="tap-titles">
+                        <p class="tap-links ative-link" onclick="opentab('skills')">skills</p>
+                        <p class="tap-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tap-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                        <li><span>Brand Marketing Manager</span></li>
+                        <li><span>Graphic Designing</span></li>
+                        <li><span>freelance video editting</span></li>
+                        <li><span>color Grading</span></li>
+                        <li><span>Social Media Content Creating</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                        <li><span>2024-present</span><br>Freelance Video Editor and content Creator</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                        <li><span>2023-present</span><br>Bachelor of Computer Science at Kampala International University</li>
+                        <li><span>2021-2023</span><br>Advanced Level of Education at Ecknoford Secondary School</li>
+                        <li><span>2017-2020</span><br> secondary Education at Haki Secondary school</li>
+                        <li><span>2010-2016</span><br>Primary Education at Honest Primary School</li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-house-laptop"></i>
+                    <h2>Graphic Design</h2>
+                    <p>Welcome to my creative space! I’m a passionate graphic designer with a keen eye for detail and a love for all things visual. With over years of experience in the field, I’ve honed my skills in creating compelling, impactful designs that resonate with audiences.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-arrows-spin"></i>
+                    <h2>Content Creator</h2>
+                    <p>Welcome to my content creation portfolio, where storytelling meets strategy. As a passionate and versatile content creator, I specialize in crafting engaging, high-quality content that captivates audiences, builds communities, and drives results. From social media posts and videos to blogs and branded campaigns, I thrive on turning ideas into compelling narratives that resonate with viewers.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-video"></i>
+                    <h2>Freelance Video Editor</h2>
+                    <p>Welcome to my video editing portfolio, where creativity and precision come together to bring stories to life. As a freelance video editor, I specialize in transforming raw footage into polished, engaging, and impactful videos that captivate audiences and achieve your goals. Whether it’s for social media, YouTube, corporate projects, or creative storytelling, I’m passionate about crafting visuals that leave a lasting impression.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="#">
+                </div>
+                <div class="work">
+                    <img src="#">
+                </div>
+                <div class="work">
+                    <img src="#">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>genius15093004@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+255 620 861 926</p>
+                    <div class="social-icons">
+                        <a href="@iam-genius30"><i class="fab fa-instagram"></i></a>
+                        <a href="@genius30"><i class="fab fa-youtube"></i></a>
+                        <a href=""><i class="fab fa-linkedln"></i></a>                  
+                    </div>
+                    <div class="download-cv">
+                        <a href="mustafa.pdf" download class="btn btn2">
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                    </div>
+               </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <buttom type="submit" class="btn btn2">Submit</buttom>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> Copyright @Mustapha tz</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
