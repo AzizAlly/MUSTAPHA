@@ -89,3 +89,18 @@ window.addEventListener('scroll', function() {
         }
     });
 });
+// Video Hover Interaction
+document.querySelectorAll('.media-wrapper').forEach(wrapper => {
+    const video = wrapper.querySelector('video');
+    
+    if(video) {
+        wrapper.addEventListener('mouseenter', () => {
+            video.play().catch(() => {});
+        });
+        
+        wrapper.addEventListener('mouseleave', () => {
+            video.pause();
+            video.currentTime = 0;
+        });
+    }
+});
