@@ -104,7 +104,7 @@ document.querySelectorAll('.media-wrapper').forEach(wrapper => {
         });
     }
 });
-const scriptURL = 'https://script.google.com/macros/s/AKfycbyuhtCf9tvuXTaQp0Xa3w1qUtt8zLZ7qTJnbMDnKfNTzujK_b9BqaCy_m41PiuUIJb1-Q/exec'; // Replace with your URL
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwUPANXkkTYsSySIWzXXSkJvymV7eJp-BhoEDkiPEnWm7sBqZ5_1jdji_N31RR_Mayjew/exec'; // Replace with your URL
 const form = document.forms['contactForm'];
 
 form.addEventListener('submit', e => {
