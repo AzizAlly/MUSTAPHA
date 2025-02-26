@@ -104,3 +104,32 @@ document.querySelectorAll('.media-wrapper').forEach(wrapper => {
         });
     }
 });
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyuhtCf9tvuXTaQp0Xa3w1qUtt8zLZ7qTJnbMDnKfNTzujK_b9BqaCy_m41PiuUIJb1-Q/exec'; // Replace with your URL
+const form = document.forms['contactForm'];
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    
+    const submitBtn = form.querySelector('button[type="submit"]');
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = 'Sending...';
+
+    fetch(scriptURL, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        }
+    })
+    .then(response => {
+        alert('Message sent successfully!');
+        form.reset();
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = 'Submit';
+    })
+    .catch(error => {
+        alert('Error sending message! Please try again.');
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = 'Submit';
+    });
+});
